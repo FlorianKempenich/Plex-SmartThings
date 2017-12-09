@@ -134,10 +134,11 @@ def getClientList() {
                         def port = uri.split(":")[2].replaceAll("/","")
 
                         //Check if IP on same range
-                        if(plexServerIPShort == address.substring(0 , address.lastIndexOf("."))){
+                        // TODO: Understand why that check was here in the first place
+                        //if(plexServerIPShort == address.substring(0 , address.lastIndexOf("."))){
                             addressVal = address
                             portVal = port
-                        }
+                        //}
                     }
 
 
