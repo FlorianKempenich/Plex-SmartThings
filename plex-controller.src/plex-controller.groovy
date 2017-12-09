@@ -148,6 +148,14 @@ metadata {
     }
 }
 
+def on() {
+    play()
+}
+
+def off() {
+    pause()
+}
+
 // parse events into attributes
 def parse(String description) {
 	log.debug "Virtual switch parsing '${description}'"
